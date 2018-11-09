@@ -25,6 +25,8 @@ public class StringListTest {
 
         assertThat(actual, is(expected));
 
+        assertThat(actual, hasItems("a"));
+        
         assertThat(actual, hasItems("b"));
 
         assertThat(actual, hasSize(3));
