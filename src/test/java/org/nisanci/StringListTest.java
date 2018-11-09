@@ -24,6 +24,8 @@ public class StringListTest {
         List<String> expected = Arrays.asList("a", "b", "c");
 
         assertThat(actual, is(expected));
+
+        assertThat(actual, hasItems("a"));
         
         assertThat(actual, hasItems("b"));
 
